@@ -1,0 +1,36 @@
+
+	.page{
+		font-size: 5em;
+	}
+			
+@keyframes goaway{
+	20%{
+		transform: rotate(10deg);
+	}
+	100%{
+		transform: translateX(-100%);
+	}
+}
+@keyframes comeOn{
+	0%{
+		transform: translateX(-100%);
+	}
+	20%{
+		transform: rotate(-10deg);
+	}
+	100%{
+		transform: translateX(100%);
+}
+}
+
+	.goAway{
+		animation-name: goaway;
+		animation-duration: 1s;
+		animation-fill-mode: forwards;
+	}
+	.comeOn{
+		animation-name: comeOn;
+		animation-delay: 1s;
+		animation-duration: 1s;
+		animation-fill-mode: forwards;
+	}
